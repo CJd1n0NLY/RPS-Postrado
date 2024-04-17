@@ -2,4 +2,6 @@
     <string name="app_name">RockPaperScissorGame</string>
     <string name="player_selects">Player Selects:</string>
     <string name="bot_selects">Bot Selects:</string>
+    <string name="rock_paper_scissor">Rock Paper Scissor</string>
+    <string name="reset">Reset</string>
 </resources>

@@ -9,11 +9,22 @@
     android:background="@color/powderBlue"
     >
     <TextView
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/reset"
+        android:textStyle="italic"
+        android:textSize="10sp"
+        android:textColor="@color/red"
+        tools:ignore="SmallSp" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="Rock Paper Scissor"
+        android:text="@string/rock_paper_scissor"
         android:textStyle="italic"
         android:textSize="40sp"
         />

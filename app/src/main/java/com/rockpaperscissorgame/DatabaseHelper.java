@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "finalRpsDatabase.db";
+    private static final String DATABASE_NAME = "rps.db";
     private static final String TABLE_NAME = "rpsHistory";
     private static final String COLUMN_ID = "id";
     private static final String COLUMN_MATCHRESULT = "matchResult";
@@ -32,8 +32,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
 
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
-//        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME2);
-
         onCreate(db);
 
     }
