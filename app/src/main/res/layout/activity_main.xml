@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/powderBlue"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Rock Paper Scissor"
+        android:textStyle="italic"
+        android:textSize="40sp"
+        />
+
+    <TextView
+        android:id="@+id/lblWhoWins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:id="@+id/userVsComputer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/labelWin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WIN: "
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/lblWin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_toRightOf="@id/labelWin"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+
+        />
+
+    <TextView
+        android:id="@+id/labelLose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOSE: "
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/labelWin"
+        android:textStyle="bold"
+        android:textSize="20sp"
+
+        />
+    <TextView
+        android:id="@+id/lblLose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_toRightOf="@id/labelLose"
+        android:layout_below="@id/lblWin"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+
+        />
+
+    <ImageView
+        android:id="@+id/userHands"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_toRightOf="@id/lblLose"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="10dp"
+        />
+    <ImageView
+        android:id="@+id/computerHands"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_toRightOf="@id/userHands"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/dispHands"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_toRightOf="@id/lblLose"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="45dp"
+        android:background="@drawable/default_image"
+        />
+
+    <ImageButton
+        android:id="@+id/rockImage"
+        android:layout_width="84dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/rock1"
+        android:contentDescription="Rock" />
+
+    <TextView
+        android:id="@+id/labelRock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rockImage"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="70dp"
+        android:text="ROCK" />
+
+    <ImageButton
+        android:id="@+id/paperImage"
+        android:layout_width="84dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="400dp"
+        android:layout_toRightOf="@id/rockImage"
+        android:background="@drawable/paper1"
+        android:contentDescription="Paper" />
+
+    <TextView
+        android:id="@+id/labelPaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paperImage"
+        android:layout_toRightOf="@id/labelRock"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="75dp"
+        android:text="PAPER" />
+
+    <ImageButton
+        android:id="@+id/scissorsImage"
+        android:layout_width="84dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="400dp"
+        android:layout_toRightOf="@id/paperImage"
+        android:background="@drawable/scissors1"
+        android:contentDescription="Scissors" />
+
+    <TextView
+        android:id="@+id/labelScissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paperImage"
+        android:layout_toRightOf="@id/labelPaper"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="65dp"
+        android:text="SCISSORS" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:layout_marginTop="580dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/historyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Game History"
+        android:layout_below="@id/playButton"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/player_selects" />
+
+    <TextView
+        android:id="@+id/playerSelects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="100dp"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="250dp"
+        android:text="@string/bot_selects"
+        />
+
+    <TextView
+        android:id="@+id/botSelects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/textView3"        />
+
+
+
+</RelativeLayout>
